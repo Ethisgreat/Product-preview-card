@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: fraunce;
+    src: url(/Custom-fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(/Custom-fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+body {
+    overflow-x: hidden;
+    background: hsl(30, 38%, 92%);
+}
+
+h1 {
+    font-family: fraunce;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: hsl(158, 36%, 37%);
+    font-size: 33px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+span {
+    font-family: montserrat;
+    color: hsl(228, 12%, 48%);
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.container {
+    max-width: 630px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background: #fff;
+    width: 670px;
+    height: 490px;
+    border-radius: 15px;
+    display: flex;
+    position: absolute;
+    top: 20%;
+}
+
+.laptopimg {
+    width: 340px;
+    height: 490px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.container-right > * {
+    margin-left: 35px;
+}
+
+h3 {
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 15px;
+    color: hsl(228, 12%, 48%);
+    font-family: montserrat;
+    padding-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.price-container {
+    display: flex;
+    font-family: fraunce;
+}
+
+.price-container p {
+    font-family: montserrat;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    margin-top: 32px;
+    margin-left: 25px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 17px 62px 17px 62px;
+    background: hsl(158, 36%, 37%);
+    color: #fff;
+    font-family: montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+}
+
+button p {
+    margin-left: 15px;
+}
+
+#mobileimg {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    #mobileimg {
+        display: inherit;
+        width: 350px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        position: absolute;
+        top: -48%;
+    }
+    .laptopimg {
+        display: none;
+    }
+    .product-card {
+        width: 350px;
+        height: 475px;
+        position: absolute;
+        top: 33.5%;
+        left: 20%;
+    }
+
+}
